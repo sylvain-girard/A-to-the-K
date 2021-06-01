@@ -33,7 +33,7 @@ function setup() {
   //background(50);
 noStroke();
 angleMode(DEGREES);
-  
+    frameRate(60);
  analyzer = new p5.Amplitude();  
  analyzer.setInput(); 
 }
@@ -76,10 +76,10 @@ background(243,244,228);
 //}
 
 
-pfat = map(millis(),0,20000,0,900) + volume; //THIS WORKS
+pfat = map(frameCount,0,2000,0,900) + volume; //THIS WORKS
 typeSize = volume/2;
 
-
+textAlign(CENTER,CENTER);
  text(content, width/2,height/2);
 
 
@@ -104,20 +104,33 @@ typeSize = volume/2;
 }
 
 function keyTyped(){
-    content += key;
+   
+ content += key;
+    
+ if(!sound1.isPlaying()){       
+   sound1.play(); 
+   frameCount = 0;
+ } else if (sound1.isPlaying() && frameCount > 60){
+   sound1.pause();
+   frameCount = 0;
+} else {
+  frameCount = 0;
+}
+}
     //content3 += key;
     
-   if(sound1.isPlaying){         //THIS IS WHAT I WANT TO CONTROL MY SOUND TURNING OFF, 
- sound1.stop(2) ;                //WORKS SOMETIMES(?) IN THIS SKETCH, BUT BREAKS THE MAIN SKETCH
- }
-}
+  // if(sound1.isPlaying){         //THIS IS WHAT I WANT TO CONTROL MY SOUND TURNING OFF, 
+// sound1.stop(2) ;                //WORKS IN THIS SKETCH, BUT BREAKS THE MAIN SKETCH
+ //}
+//}
 
 
-function keyPressed(){
-  
-if (key == 'a'){
-    sound1.play();
-}
+//function keyPressed(){
+//  if (key == 'a'){
+//    sound1.play();
+//} else if(sound1.isPlaying()){         //THIS IS WHAT I WANT TO CONTROL MY SOUND TURNING OFF, 
+// sound1.stop(2) ; 
+//}
   
  // if(sound1.isPlaying){
  //sound1.pause(); 
@@ -125,17 +138,30 @@ if (key == 'a'){
    
  //  if(sound1.isPlaying){
  //sound1.stop(2); 
- //}
  
+ 
+
+
+function keyPressed(){
+//     if(!sound1.isPlaying()){         //THIS IS WHAT I WANT TO CONTROL MY SOUND TURNING OFF, 
+// sound1.play(); 
+// frameCount = 0;
+// } else if (sound1.isPlaying() && frameCount > 60){
+//    sound1.pause();
+//    frameCount = 0;
+//} else {
+//  frameCount = 0;
+//}
 }
+ 
 
   
 
 function mousePressed(){
   //saveCanvas('samplerShot_###', 'jpg');
-//if(sound1.isPlaying){
-// sound1.pause(); 
-//}
+if(!sound1.isPlaying()){
+ sound1.play(); 
+}
 }
 function windowResized(){
   resizeCanvas(windowWidth,windowHeight);
