@@ -108,7 +108,7 @@ function keyTyped(){
     //content3 += key;
     
    if(sound1.isPlaying){         //THIS IS WHAT I WANT TO CONTROL MY SOUND TURNING OFF, 
- sound1.stop(2) ;                //WORKS IN THIS SKETCH, BUT BREAKS THE MAIN SKETCH
+ sound1.stop(2) ;                //WORKS SOMETIMES(?) IN THIS SKETCH, BUT BREAKS THE MAIN SKETCH
  }
 }
 
