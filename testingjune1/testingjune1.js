@@ -171,9 +171,9 @@ function keyPressed(){
 
 function mousePressed(){
   //saveCanvas('samplerShot_###', 'jpg');
-if(!sound1.isPlaying()){
- sound1.play(); 
-}
+//if(!sound1.isPlaying()){
+ //sound1.play(); 
+//}
 }
 function windowResized(){
   resizeCanvas(windowWidth,windowHeight);
