@@ -4,7 +4,7 @@ let typeSize = 0;
 let cnv, mapper;
 let pfat;
 let fts;
-let sound1, sound2, sound3, sound4, sound5, sound6, sound7, analyzer;
+let sound1, sound2, sound3, sound4, sound5, sound6, sound7, analyzer, song;
 let txtcol1, txtcol2;
 let volume, volcol, volcol2;
 let opac;
@@ -33,9 +33,11 @@ function setup() {
   //background(50);
 noStroke();
 angleMode(DEGREES);
-    frameRate(60);
+    //frameRate(60);
  analyzer = new p5.Amplitude();  
  analyzer.setInput(); 
+ 
+
 }
 
   
@@ -76,7 +78,7 @@ background(243,244,228);
 //}
 
 
-pfat = map(frameCount,0,2000,0,900) + volume; //THIS WORKS
+//pfat = map(frameCount,0,2000,0,900) + volume; //THIS WORKS
 typeSize = volume/2;
 
 textAlign(CENTER,CENTER);
@@ -108,11 +110,11 @@ textAlign(CENTER,CENTER);
 //if (sound2.isPlaying()){
 //  console.log(sound2.currentTime());
 //}
-
 }
-
+console.log('test');
 function keyTyped(){
-   
+ //content += key;
+    
  if( ! sound2.isPlaying()){       
    sound2.play(); 
    
@@ -128,6 +130,7 @@ function keyTyped(){
 } else {
   frameCount = 0;
 }
+
 }
     //content3 += key;
     
@@ -171,9 +174,7 @@ function keyPressed(){
 
 function mousePressed(){
   //saveCanvas('samplerShot_###', 'jpg');
-//if(!sound1.isPlaying()){
- //sound1.play(); 
-//}
+
 }
 function windowResized(){
   resizeCanvas(windowWidth,windowHeight);
