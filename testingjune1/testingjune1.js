@@ -99,19 +99,31 @@ textAlign(CENTER,CENTER);
 //}
 
 
+ //console.log(frameCount); 
 
+//if (frameCount > 200){
+// frameCount = 0; 
+//}
+
+//if (sound2.isPlaying()){
+//  console.log(sound2.currentTime());
+//}
 
 }
 
 function keyTyped(){
    
- content += key;
-    
- if(!sound1.isPlaying()){       
-   sound1.play(); 
+ if( ! sound2.isPlaying()){       
+   sound2.play(); 
+   
+   background(0);
    frameCount = 0;
- } else if (sound1.isPlaying() && frameCount > 120){
-   sound1.pause();
+
+   console.log('play');
+ } else if (sound2.isPlaying() && frameCount > 200){
+  console.log('pause');
+  background(200);
+   sound2.stop();
    frameCount = 0;
 } else {
   frameCount = 0;
