@@ -110,7 +110,7 @@ function keyTyped(){
  if(!sound1.isPlaying()){       
    sound1.play(); 
    frameCount = 0;
- } else if (sound1.isPlaying() && frameCount > 60){
+ } else if (sound1.isPlaying() && frameCount > 120){
    sound1.pause();
    frameCount = 0;
 } else {
