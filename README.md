@@ -14,4 +14,8 @@
 
 [variable drawn](https://sylvain-girard.github.io/A-to-the-K/variabledrawn/)
 
+[test with notes](https://sylvain-girard.github.io/A-to-the-K/testingjune1/)
+
 [sampler](https://sylvain-girard.github.io/A-to-the-K/UchenLatinSampler/)
+
+
