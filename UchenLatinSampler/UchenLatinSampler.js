@@ -1,3 +1,8 @@
+/* 
+  * A to the K Studio 2021 Type Sampler
+  Thanks to Karen ann Donnachie for the variablehelper.js for utilising variable fonts as textFont() in p5.js.
+  */
+
 let pvar=100;
 //set starting variable type size
 let typeSize = 0;
