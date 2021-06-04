@@ -18,6 +18,6 @@
 
 [sampler](https://sylvain-girard.github.io/A-to-the-K/UchenLatinSampler/)
 
-[font view](https://sylvain-girard.github.io/A-to-the-K/UchenLatinSampler/fontview/)
+[font view](https://sylvain-girard.github.io/A-to-the-K/fontview/)
 
 
