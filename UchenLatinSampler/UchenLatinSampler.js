@@ -32,8 +32,9 @@ function setup() {
     fft = new p5.FFT(0.9);
   fft.setInput();
   
-  //a = createA('/data/UchenLatin.ttf', 'Download',"_download");
+  //a = createA('/data/UchenLatin.ttf', 'Download');
   b = createA('https://sylvain-girard.github.io/A-to-the-K/UchenLatinSampler/fontview/', 'Font view');
+
 
 }
 
@@ -142,8 +143,8 @@ if (sound2.isPlaying() && frameCount > 80){
   opac = 'rgb(195,196,169,0)';
 }
 
-  a.position(0.05*width, 0.95*(height/2));
-  a.style('color',opac);
+  //a.position(0.05*width, 0.95*(height/2));
+  //a.style('color',opac);
   b.position(0.9*width, 0.95*(height/2));
   b.style('color',opac);
  
