@@ -14,9 +14,9 @@ function setup() {
   noStroke();
   textAlign(CENTER);
 
-  a = createA('google.com', 'Sampler');
-  b = createA('google.com', 'Font view');
-  c = createA('/data/UchenLatin.ttf', 'Download');
+  a = createA('https://sylvain-girard.github.io/A-to-the-K/UchenLatinSampler/', 'Sampler');
+  b = createA('https://sylvain-girard.github.io/A-to-the-K/UchenLatinSampler/fontview/', 'Font view');
+  c = createA('UchenLatinSampler/data/UchenLatin.ttf', 'Download');
 }
 
 
