@@ -32,7 +32,7 @@ function setup() {
     fft = new p5.FFT(0.9);
   fft.setInput();
   
-  a = createA('/data/UchenLatin.ttf', 'Download');
+  a = createA('/data/UchenLatin.ttf', 'download','Download');
   b = createA('https://sylvain-girard.github.io/A-to-the-K/UchenLatinSampler/fontview/', 'Font view');
 
 }
