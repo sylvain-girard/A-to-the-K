@@ -33,8 +33,7 @@ function setup() {
   fft.setInput();
   
   a = createA('/data/UchenLatin.ttf', 'Download');
-  b = createA('google.com', 'Font view');
-
+  b = createA('https://sylvain-girard.github.io/A-to-the-K/UchenLatinSampler/fontview/', 'Font view');
 
 }
 
