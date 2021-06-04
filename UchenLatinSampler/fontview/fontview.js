@@ -16,7 +16,7 @@ function setup() {
 
   a = createA('https://sylvain-girard.github.io/A-to-the-K/UchenLatinSampler/', 'Sampler');
   b = createA('https://sylvain-girard.github.io/A-to-the-K/UchenLatinSampler/fontview/', 'Font view');
-  c = createA('UchenLatinSampler/data/UchenLatin.ttf', 'Download');
+  //c = createA('UchenLatinSampler/data/UchenLatin.ttf', 'Download');
 }
 
 
@@ -28,11 +28,11 @@ function draw() {
   fill(60);
   text(content, 0.2*width, 0.05*height, 0.6*width, 0.9*height); 
     
-  a.position(0.05*width, 0.9*(height/2));
+  a.position(0.05*width, 0.95*(height/2));
   a.style('color','rgb(195,196,169,50)');
   b.position(0.9*width, 0.95*(height/2));
   b.style('color','rgb(195,196,169,50)');
-  c.position(0.05*width, 0.9*(height/2)+40);
+  c.position(0.05*width, 0.9*(height/2));
   c.style('color','rgb(195,196,169,50)');
 }
   
