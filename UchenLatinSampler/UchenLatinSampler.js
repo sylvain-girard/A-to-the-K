@@ -82,7 +82,7 @@ pfat = volume;
 stroke(156,36,21);
 strokeWeight(5);
 noFill();
-typeSize = height/4 + (volume/3);
+typeSize = height/5 + (volume/3);
 content = content;
   } else {
 pfat = map(millis(),0,300000,0,900);
@@ -98,12 +98,12 @@ typeSize = height/30;
   rotate(180);
     for (let x = offset; x < width; x += contwidth+20) {
     textAlign(CENTER,CENTER);
-    text(content, x, -height+(typeSize-(volume/3))); 
+    text(content, x, -height+(typeSize)); 
   }
   pop();
     for (let x = offset; x < width; x += contwidth+20) {
     textAlign(CENTER,CENTER);
-  text(content, x, (typeSize-(volume/3))); 
+  text(content, x, (typeSize)); 
   }
 
  
