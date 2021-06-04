@@ -32,8 +32,8 @@ function draw() {
   a.style('color','rgb(195,196,169,50)');
   b.position(0.9*width, 0.95*(height/2));
   b.style('color','rgb(195,196,169,50)');
-  c.position(0.05*width, 0.9*(height/2));
-  c.style('color','rgb(195,196,169,50)');
+  //c.position(0.05*width, 0.9*(height/2));
+  //c.style('color','rgb(195,196,169,50)');
 }
   
   function keyTyped(){
