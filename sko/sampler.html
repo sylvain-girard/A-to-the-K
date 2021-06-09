@@ -38,7 +38,7 @@
 		    <h1>Starting with code</h1>
 		  </div>
 		
-		<iframe src="https://editor.p5js.org/sylvain-girard/embed/Gg376sp4T" width="600px" height="400px">
+		<iframe src="https://editor.p5js.org/sylvain-girard/embed/Gg376sp4T" width="900px" >
 		</iframe>
 		
 		    <p>
@@ -84,7 +84,7 @@
 		    Digital calligraphy
 		  </h1>
 		  <div class ="imgsingle">
-		  <img src="inking.gif" alt="calligraphy simulation" />
+		  <img src="inking.gif" width="900px" alt="calligraphy simulation" />
 		</div>
 		  <p>
 		    This was just the result of my trying to figure out a way to show my variable font drawn in p5js, rather than in the CSS. As my idea was to use text to point to create the ink on paper effect, then have the strokes slowly drip down, the only way to do so would be to 'fake' the variability. To achieve this effect, I had to draw one instance of my font in its maximum weight form, with text to points applied to it, then a background colour layer that moves down to reveal the long descenders, then draw the standard version of my font on the very top. At this point I started to think about other ideas, because I didn't really want to have put all the effort into my variable font if I wasn't going to use it in the sampler, so I started to think of other ideas.
@@ -93,7 +93,7 @@
 		    Pinup session
 		  </h1>
 		  <div class ="imgsingle">
-		  <img src="sampler.jpg" alt="sampler progress" />
+		  <img src="sampler.jpg" width="900px" alt="sampler progress" />
 		</div>
 		  <p>
 		    This was just the pinup that I showed in class in one of the last classes. I knew thhat my idea was going to change, but this was just the last step I had taken before the class. I got a lot of feedback that it looked very much like a sanskrit/ancient language style of font, but also a lot of feedback that it reminded people of a heavy metal band or band t-shirt. While I had noticed that when designing it, I hadn't thought that aspect of it would be so obvious to others, so from here I started thinking about a new idea that could incorporate that aspect and the traditional aspect in my sampler.
@@ -102,7 +102,7 @@
 		    Getting a variable font into p5.js
 		  </h1>
 		  <div class ="imgsingle">
-		  <img src="variabledrawn.gif" alt="variable in p5js" />
+		  <img src="variabledrawn.gif" width="900px" alt="variable in p5js" />
 		</div>
 		<p>
 		  This is Karen's sketch of my font that is able to take the CSS set font and use it as the default font in a p5js sketch. In all my research I never found any way of doing it like this, so this development was super helpful. The only drawback for my situation was that being that the font is not loaded in the preload, p5js doesn't have access to the font's path information, so text to points cannot be applied. From here I changed the direction of my sampler to not use text to points at all.
@@ -111,7 +111,7 @@
 		    Last steps
 		  </h1>
 		    <div class ="imgsingle">
-		  <img src="hero.jpg" alt="variable in p5js" />
+		  <img src="hero.jpg" width="900px" alt="variable in p5js" />
 		</div>
 		  <p>
 		    From here I basically just started building up my final sampler. It was a bit difficult in the beginning because I made the mistake of trying to turn my old sketch with the CSS into the new one with drawn text, so the code was messy and hard to keep track of. In line with my new direction relating the sampler to music in some way, I added some sound to control the variation of the font. I wanted the sampler to start out almost like my original idea, very calm and traditional, but then when someone is typing it becomes chaotic and loud. Before starting the 'trigger' I was mostly working on the change itself, and I did this using a lot of if/else statements. I'm sure there is definitely a neater way to do it though with the time I had left I want wanted to first get the sampler up and running.  
@@ -120,7 +120,7 @@
 		    Final sampler
 		  </h1>
 		      <div class ="imgsingle">
-		  <img src="final.jpg" alt="uchen latin sampler" />
+		  <img src="final.jpg" width="1200px" alt="uchen latin sampler" />
 		</div>
 		  <p>
 		    Then it was just a lot of tinkering with the code to get the usabilty right. I had trouble finding a way to implement my typing interaction in a way that was reliable. Karen gave me the idea of using the frame count of the sketch as a timer for the sound to stop after typing finishes, in turn stopping the visuals. After some playing around with it, it worked really well and did exactly what I wanted. After that I was pretty much done with the sketch, though as my sampler is a bit more on the abstract side, I wanted to have a way to see all the glyphs of the font and vary them as you please, so I just made a small 'sub-sampler' that has the full font view.
@@ -129,7 +129,7 @@
 		    Full font view
 		  </h1>
 		      <div class ="imgsingle">
-		  <img src="fontview.jpg" alt="uchen latin" />
+		  <img src="fontview.jpg" width="1200px" alt="uchen latin" />
 		</div>
 		
 		  <h3>
