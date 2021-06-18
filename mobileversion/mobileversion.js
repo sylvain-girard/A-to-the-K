@@ -1,13 +1,11 @@
 let pfat;
 let fts;
-let sound1, sound2, sound3, analyzer;
-let txtcol1, txtcol2;
 let volume, volcol;
 let opac;
 let content = '';
 let offset = 0;
 let scrollspeed = 0.5;
-let textsize = 30;
+
 
 function preload(){
   font = loadFont('data/UchenLatin.ttf');
@@ -39,6 +37,7 @@ function draw() {
   let posX = 0;
   let posY = 0;
   
+let textsize = width/60;
 
 let content2 = 'Uchen Latin';
   
@@ -59,9 +58,9 @@ fill(210,211,186);
  
   offset-=scrollspeed;
   
-  fts = 150;
+  //fts = 150;
   
-  p.style('font-size' ,fts);
+  //p.style('font-size' ,fts);
   p.style('color' ,"#2B2D2D");
   p.style('font-weight' ,pfat);
   p.style('width', 0.9*windowWidth);
