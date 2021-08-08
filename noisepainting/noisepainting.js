@@ -2,7 +2,7 @@ var strokeLength = 35;
 var strokeThickness = 10;
 var noiseScale = 0.005;
 
-var imgNames = ["data/mndl.jpeg"];
+var imgNames = ["data/mndl.jpg"];
 var imgs = [];
 var imgIndex = -1;
 
